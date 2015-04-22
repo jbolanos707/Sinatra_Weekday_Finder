@@ -2,6 +2,7 @@ require('sinatra')
 require('sinatra/reloader')
 require('./lib/weekday_finder')
 also_reload('lib/**/*.rb')
+require('pry')
 
 get ('/') do
   erb(:index)
